@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label for="">Enter the P:</label>
+    <input type="text" id="s1"><br>
+
+    <label for="">Enter the R:</label>
+    <input type="text" id="s2"><br>
+
+    <label for="">Enter the N:</label>
+    <input type="text" id="s3"><br>
+
+
+    <h1 id="total"></h1>
+</body>
+</html>
+
+<script>
+
+    let P=document.getElementById("s1").value
+    let R=document.getElementById("s2").value
+    let N=document.getElementById("s3").value
+   
+
+    let total=(P * R * N)/100
+
+    document.getElementById("total").innerHTML=total
+
+</script>
