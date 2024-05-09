@@ -1,0 +1,57 @@
+<!-- 5. *Grading System:*
+    - A: 90-100
+    - B: 80-89
+    - C: 70-79
+    - D: 60-69
+    - F: 0-59 -->
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+    
+        <h1>Enter mark</h1>
+        <input type="text" id="tm">
+    
+        <h1 id="ans"></h1>
+    
+    </body>
+    </html>
+    
+    <script>
+        let a=document.getElementById("tm").value;
+    
+        if(a === "")
+        {
+            console.log("enter mark");
+        }
+        else
+        {
+            if(a<=100 && a>=90)
+            {
+                document.getElementById("ans").innerHTML = "A";
+            }
+            else if(a>=80 && a<=89)
+            {
+                document.getElementById("ans").innerHTML = "B";
+            }
+            else if(a>=70 && a<=79)
+            {
+                document.getElementById("ans").innerHTML = "C";
+            }
+            else if(a>=60 && a<=69)
+            {
+                document.getElementById("ans").innerHTML = "D";
+            }
+            else
+            {
+                document.getElementById("ans").innerHTML = "F";
+            }
+    
+        }
+    </script>

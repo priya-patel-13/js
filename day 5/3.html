@@ -1,0 +1,102 @@
+<!-- 3. Implement a program that calculates the largest among five numbers entered by the user. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="">Enter a:</label>
+    <input type="text" id="a"><br><br>
+
+    <label for="">Enter b:</label>
+    <input type="text" id="b"><br><br>
+
+    <label for="">Enter c:</label>
+    <input type="text" id="c"><br><br>
+
+    <label for="">Enter d:</label>
+    <input type="text" id="d"><br><br>
+
+    <label for="">Enter e:</label>
+    <input type="text" id="e"><br><br>
+
+    <h1 id="ans"></h1>
+</body>
+</html>
+
+<script>
+
+    let a=document.getElementById("a").value
+    let b=document.getElementById("b").value
+    let c=document.getElementById("c").value
+    let d=document.getElementById("d").value
+    let e=document.getElementById("e").value
+
+    if(a==="" && b==="" && c==="" && d==="" && e==="")
+    {
+        document.getElementById("ans").innerHTML = "ENTER VALUE"
+    }
+
+    else
+    {
+
+    if(a>b && a>c)
+    {
+        if(a>d)
+        {
+            if(a>e)
+            {
+                document.getElementById("ans").innerHTML = "A IS LARGEST"
+            }
+            else
+            {
+                document.getElementById("ans").innerHTML = "E IS LARGEST"
+            }
+            }
+            else
+            {
+                document.getElementById("ans").innerHTML = "D IS LARGEST"
+            }
+    }
+
+    else if(b>c)
+        {
+            if(b>d)
+            {
+                if(b>e)
+                {
+                    document.getElementById("ans").innerHTML = "B IS LARGEST"
+                }
+                else
+                {
+                    document.getElementById("ans").innerHTML = "E IS LARGEST"
+                }  
+            }
+            else
+            {
+                document.getElementById("ans").innerHTML = "D IS LARGEST"
+            }
+        }
+
+
+    else if(c>d && c>e)
+    {
+        document.getElementById("ans").innerHTML = "C IS LARGEST"
+    }
+
+    else if(d>e)
+    {
+        document.getElementById("ans").innerHTML = "D IS LARGEST"
+    }
+    else
+    {
+       document.getElementById("ans").innerHTML = "E IS LARGEST"
+    }
+
+    }
+</script>

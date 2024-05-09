@@ -1,0 +1,53 @@
+<!-- 7. Swap 3 numbers take value from user -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="">Enter a:</label>
+    <input type="text" id="a"><br><br>
+
+    <label for="">Enter b:</label>
+    <input type="text" id="b"><br><br>
+
+    <label for="">Enter c:</label>
+    <input type="text" id="c"><br><br>
+
+
+    <h1 id="ans1"></h1>
+    <h1 id="ans2"></h1>
+    <h1 id="ans3"></h1>
+</body>
+</html>
+
+<script>
+
+    let a=document.getElementById("a").value
+    let b=document.getElementById("b").value
+    let c=document.getElementById("c").value
+
+    let t
+
+    if(a==="" && b==="" && c==="")
+    {
+        document.getElementById("ans").innerHTML = "ENTER VALUE"
+    }
+
+    else
+    {
+
+        t=a
+        a=b
+        b=c
+        c=t
+        
+        document.getElementById("ans1").innerHTML= "a="+ a
+        document.getElementById("ans2").innerHTML= "b="+ b
+        document.getElementById("ans3").innerHTML= "c="+ c
+    }
+</script>
