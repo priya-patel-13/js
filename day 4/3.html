@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Enter first number</h1>
+    <input type="text" id="in1">
+
+    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Enter second number</h1>
+    <input type="text" id="in2">
+
+    <h1 id="ans" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Result</h1>
+</body>
+
+</html>
+
+<script>
+
+    let a = document.getElementById("in1").value
+    let b = document.getElementById("in2").value
+
+
+    if (a === "" && b === "") {
+        document.getElementById("ans").innerHTML = "Enter valid input"
+    }
+    else {
+        if (a == b) {
+            document.getElementById("ans").innerHTML = "Equal"
+        }
+        else if (a > b) {
+            document.getElementById("ans").innerHTML = "First is bigger"
+        }
+        else {
+            document.getElementById("ans").innerHTML = "Second is bigger"
+        }
+    }
+
+
+</script>
