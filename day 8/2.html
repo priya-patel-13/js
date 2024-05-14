@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+</style>
+<body>
+    
+    <h1>Enter price</h1>
+    <input type="text" id="in1">
+<br>
+    <label for="">Discount</label>
+    <h1 id="ans"></h1>
+    <label for="">Discountable amount</label>
+    <h1 id="ans1"></h1>
+
+
+</body>
+</html>
+
+<script>
+
+    let price = document.getElementById("in1").value
+
+    if(price === ""){
+        document.getElementById("ans").innerHTML = "Enter price"
+    }
+    else{
+        if(price >=1 && price <=49){
+            document.getElementById("ans").innerHTML = "No discount"
+            let amt 
+            amt = price
+        }
+        else if(price >=50 && price <=99){
+            let dis
+            dis = price*0.10
+            let dis_amt
+            dis_amt = price - dis
+
+        document.getElementById("ans").innerHTML = dis
+        document.getElementById("ans1").innerHTML = dis_amt
+        }
+        else if(price >=100){
+            let dis
+            dis = price*0.20
+            let dis_amt
+            dis_amt = price - dis
+
+        document.getElementById("ans").innerHTML = dis
+        document.getElementById("ans1").innerHTML = dis_amt
+        }
+    }
+
+</script>

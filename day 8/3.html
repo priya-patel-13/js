@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     * {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+</style>
+<body>
+    
+    <h1>Guess a number</h1>
+    <input type="text" id="in1">
+
+    <h1 id="ans"></h1>
+</body>
+</html>
+
+<script>
+
+    let sim_num = 7
+
+    let user_num = document.getElementById("in1").value
+    if( user_num === ""){
+        document.getElementById("ans").innerHTML = "Enter number"
+
+    }else{
+        
+    if(user_num == sim_num){
+        document.getElementById("ans").innerHTML = "You win the game"
+    }
+    else if(user_num > sim_num){
+        document.getElementById("ans").innerHTML = "Decrease number"
+    }
+    else{
+        document.getElementById("ans").innerHTML = "Increase number"
+    }
+    }
+</script>
