@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 10%;">
+            <label for="">ENTER THE LANGUAGE</label>
+            <input type="text" id="in1">
+            <h4 id="ans"></h4>
+        </div>
+    </center>
+</body>
+</html>
+
+<script>
+    let a = document.getElementById("in1").value
+
+    if(a === "")
+    {
+        document.getElementById("ans").innerHTML = "ENTER THE VALID LANGUAGE"
+    }
+
+    else{
+        switch(a)
+        {
+            case "english":
+            document.getElementById("ans").innerHTML = "Hello Word"
+            break
+
+            case "Spanish":
+            document.getElementById("ans").innerHTML = "Hola !"
+            break
+
+            case "French":
+            document.getElementById("ans").innerHTML = "Bonjour !"
+            break
+
+            default:
+            document.getElementById("ans").innerHTML = "Language not supported !"
+
+        }
+    }
+</script>

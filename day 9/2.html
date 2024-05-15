@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Enter operator (+ - * / )</h1>
+    <input type="text" id="in1">
+
+    <h2>Enter First Number</h2>
+    <input type="text" id="in2">
+
+    <h2>Enter Second Number</h2>
+    <input type="text" id="in3">
+
+
+</body>
+</html>
+<script>
+    let operator = document.getElementById("in1").value
+    let num1 = document.getElementById("in2").value
+    let num2 = document.getElementById("in3").value
+
+    if(operator === ""){
+        document.getElementById("ans").innerHTML = ""
+    }else{
+        switch(operator){
+            case "+" : console.log(+num1 + +num2)
+            break
+            case "-" : console.log(+num1 - +num2)
+            break
+            case "*" : console.log(+num1 * +num2)
+            break
+            case "/" : console.log(+num1 / +num2)
+            break
+            default : console.log("invalid operator")
+    }
+}
+</script>

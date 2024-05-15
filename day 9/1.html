@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        
+        <h1>Day of the week</h1>
+
+        <h1>Enter the day(Monday to Sunday)</h1>
+        <input type="text" id="in1">
+
+    </center>
+</body>
+
+</html>
+
+<script>
+
+
+
+    let day = document.getElementById("in1").value
+
+    if(day === ""){
+        document.getElementById("ans").innerHTML = ""
+    }
+    else{
+        switch(day){
+            case "Monday" : console.log("It`s the start of the workweek")
+            break
+
+            case "Tuesday" : console.log("It's some other day.")
+            break
+
+            case "Wednesday" : console.log("It's some other day.")
+            break
+
+            case "Thursday" : console.log("It's some other day.")
+            break
+
+            case "Friday" : console.log("It's almost the weekend!")
+            break
+
+            case "Saturday" : console.log("It's some other day.")
+            break
+            
+            case "Sunday" : console.log("It's some other day.")
+            break
+        }
+}
+</script>

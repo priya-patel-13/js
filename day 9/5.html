@@ -1,0 +1,77 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    p{
+        width: 50%;
+    }
+</style>
+<body>
+    <h1>STARBUCKS COFFEES MENU</h1>
+    <ul>
+        <li>1.Java Chip Frappuccino</li>
+        <li>2.Caffe Americano</li>
+        <li>3.Cold coffee</li>
+        <li>4.Double Chocolate Chip Frappuccino</li>
+        <li>5.Creamy Spinach and Corn Pocket</li>
+        <li>6.Cappuccino</li>
+    </ul>
+
+    <br><br>
+    ENTER YOUR ORDER NUMBER:
+    <input type="text" id="o"> <br><br>
+    <p id="d"></p>
+    <h2 id="p"></h2>
+</body>
+</html>
+
+
+<script>
+
+    let c=document.getElementById("o").value
+
+    switch (c)
+    {
+        case "1":
+            document.getElementById("d").innerHTML = "Mocha sauce and Frappuccino® chips blended with with Frappuccino® roast coffee and milk and ice, then topped with whipped vanilla topping and mocha drizzle to bring you endless java joy."
+            document.getElementById("p").innerHTML = "₹ 383.25"
+            break;
+        
+        case "2":
+            document.getElementById("d").innerHTML = "Rich in flavour, full-bodied espresso with hot water in true European style."
+            document.getElementById("p").innerHTML = "₹ 278.25"
+            break;
+        
+        case "3":
+            document.getElementById("d").innerHTML = "Our signature rich in flavour espresso blended with delicate vanilla flavour and milk to create a perfect cold coffee delight. An all time favourite. Allergen - Contains Milk, Tall: 354 ML, 354 kcal, Grande: 473 ML, 473 kcal, Venti: 591 ML, 501 kcal.An average active adult requires 2000 kcal energy per day, however, calorie needs may vary."
+            document.getElementById("p").innerHTML = "₹ 372.75"
+            break;
+        
+        case "4":
+            document.getElementById("d").innerHTML = "Rich mocha-flavored sauce meets up with chocolaty chips, milk and ice. Top it off with whipped vanilla topping and mocha drizzle for a real party in your mouth. A coffee Free Delight"
+            document.getElementById("p").innerHTML = "₹ 414.75"
+            break; 
+
+        case "5":
+            document.getElementById("d").innerHTML = "A creamy spinach and corn filling encased in a buttery French style dough."
+            document.getElementById("p").innerHTML = "₹ 252.00"
+            break; 
+            
+        case "6":
+            document.getElementById("d").innerHTML = "Dark, Rich in flavour espresso lies in wait under a smoothed and stretched layer of thick foam. It's truly the height of our baristas' craft."
+            document.getElementById("p").innerHTML = "₹ 299.25"
+            break;
+
+        default:
+        document.getElementById("d").innerHTML = "not valid...!"
+        
+    }
+
+</script>

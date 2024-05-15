@@ -1,0 +1,55 @@
+<!-- *Question 3:*
+
+*Title:* Traffic Light
+
+*Description:* Write a JavaScript program that initializes a variable lightColor. Use a switch-case
+statement to determine the action based on the value of lightColor:
+- If lightColor is "red", console.log("Stop!").
+- If lightColor is "yellow", console.log("Slow down!").
+- If lightColor is "green", console.log("Go.").
+- For any other value of lightColor, console.log("Invalid light color"). -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Traffic Light</h1>
+    <br>
+
+    Enter the lightcolor
+    <input type="text" id="v1"><br><br>
+
+
+</body>
+</html>
+
+<script>
+
+    let a=document.getElementById("v1").value
+
+    switch (a)
+    {
+        case "red":
+        console.log("Stop!");
+        break;
+        
+        case "yellow":
+        console.log ("Slow down!");
+        break; 
+
+        case "green":
+        console.log("Go.");
+        break;
+
+        
+        
+        default:
+        console.log("Invalid light color")
+}
+</script>
