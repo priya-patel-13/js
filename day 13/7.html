@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter Celsius:
+    <input type="text" id="in1">
+    <br><br>
+
+    <h1 id="ans"></h1>
+</body>
+</html>
+
+<script>
+  
+  let a=document.getElementById("in1").value
+
+  sum = (a) => {
+    
+    if(a === ""){
+        return "Enter"
+    }
+    else{
+        let fer = (+a * 1.8) + 32
+
+        return fer
+    }
+    
+  }
+  
+  document.getElementById("ans").innerHTML = "Fehrenheit is =" + sum(a)
+</script>

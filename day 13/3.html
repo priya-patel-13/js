@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter First:
+    <input type="text" id="in1">
+    <br><br>
+
+    Enter Second:
+    <input type="text" id="in2">
+
+    <h1 id="ans"></h1>
+</body>
+</html>
+<script>
+  
+    let a=document.getElementById("in1").value
+    let b=document.getElementById("in2").value
+  
+    sum = (a,b) => {
+      let ans= a + b
+  
+      return ans
+    }
+    
+    document.getElementById("ans").innerHTML = "String is =" + sum(a,b)
+  </script>

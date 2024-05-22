@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter First:
+    <input type="text" id="in1">
+    <br><br>
+
+   
+
+    <h1 id="ans"></h1>
+</body>
+</html>
+
+<script>
+  
+  let a=document.getElementById("in1").value
+ 
+
+  sum = (a) => {
+   
+    if(a[0] === 'A' || a[a.length-1] === 'A'){
+        return "Got A in starting"
+    }
+    else if( a[0] === 'a' || a[a.length-1] === 'a'){
+        return "Got A in ending"
+    }
+    else{
+        return "Not found"
+    }
+
+ 
+  }
+  
+  document.getElementById("ans").innerHTML = "Sum is =" + sum(a)
+</script>
