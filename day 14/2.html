@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Enter name</h1>
+    <input type="text" id="in1">
+
+    <h1 id="ans"></h1>
+    <h1 id="ans1"></h1>
+</body>
+
+</html>
+
+<script>
+
+    let name = document.getElementById("in1").value
+
+    function greet(name) {
+        document.getElementById("ans").innerHTML="Welcome to our office."
+        
+        function greet2() {
+            document.getElementById("ans1").innerHTML = "Hello " + name
+        }
+        greet2()
+    }
+    greet(name)
+
+</script>
