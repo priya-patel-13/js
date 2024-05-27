@@ -1,0 +1,31 @@
+3:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    ENTER NUMBER:
+    <input type="text" id="num">
+
+    <h1 id="ans"></h1>
+</body>
+</html>
+
+<script>
+    let a= document.getElementById("num").value 
+    let ans = (function factoriacl(n){
+    if(n<=1){
+        return 1
+    }
+    else{
+        return n * factoriacl(n-1)
+    }
+  })(a)
+
+    document.getElementById("ans").innerHTML = ans
+</script>
