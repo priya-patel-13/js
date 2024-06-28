@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form2.css">
+</head>
+<body>
+    <form action="" id="login">
+        <a href="login.html" id="sign">Login</a>
+
+        <center>
+            <h1>Registration</h1>
+
+        </center>
+<br><br><br>
+        <label for="">Username <span>*</span></label>
+        <br>
+        <input type="text" id="name">
+        <br><br>
+
+        <label for="">Email <span>*</span></label>
+        <br>
+        <input type="text" id="email">
+        <br><br>
+
+        <label for="">Password <span>*</span></label>
+        <br>
+        <input type="text" id="pass">
+        <br><br>
+
+        <label for="">Confirm Password <span>*</span></label>
+        <br>
+        <input type="text" id="copass">
+<br><br>
+        <input type="submit" id="submit">
+<center>
+    <br>
+        <p id="err"></p>
+    </center>
+    </form>
+</body>
+</html>
+
+<script>
+
+    document.getElementById("login").onsubmit = function (event){
+        document.getElementById("err").innerHTML = ""
+
+        event.preventDefault()
+
+        try{
+
+            let name = document.getElementById("name").value
+            let password = document.getElementById("pass").value
+            let cpw = document.getElementById("copass").value
+            let email = document.getElementById("email").value
+
+            if(name === "")
+            {
+                throw new Error("please enter valid name")
+            }
+            if (email === "" || !/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)){
+                throw new Error("enter valid email")
+            }
+
+            if(password === "")
+            {
+                throw new Error("please enter password")
+
+            }
+            if(password !== cpw )
+            {
+                throw new Error("please Check password")
+
+            }
+
+        }
+        catch(err)
+        {
+            document.getElementById("err").style.color = "red"
+            document.getElementById("err").innerHTML = err.message
+        }
+}
+</script>
