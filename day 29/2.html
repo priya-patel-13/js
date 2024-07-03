@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class food{
+        constructor(name){
+            this.name = name;
+        }
+        cook(){
+            console.log(this.name + " is cooking");
+        }
+    }
+    class pizza extends food{
+        pizza(){
+            console.log(" Bake pizza in the 475°F oven, one at a time, until the crust is browned and the cheese is golden, about 10 to 15 minutes.");
+        }
+    }
+    class pasta extends food{
+        pasta(){
+            console.log("Boil the water (with salt and/or olive oil) in a large pan. Once boiling add the pasta and cook for 8-12 mins, depending on the shape – see above. Drain and leave to steam dry for a few mins, just until the surface of the pasta looks matte.");
+        }
+    }
+    class salad extends food{
+        salad(){
+            console.log("Wash and dry the lettuce. Tear the lettuce into bite-sized pieces and place")
+        }
+    }
+    let obj = new pizza("Neapolitan")
+    obj.cook();
+    obj.pizza();
+    let obj1 = new pasta("Spaghetti")
+    obj1.cook();
+    obj1.pasta();
+    let obj2 = new salad("Caesar")
+    obj2.cook();
+    obj2.salad();
+
+</script>
