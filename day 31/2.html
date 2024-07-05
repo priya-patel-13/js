@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class Vehical{
+        constructor(name){
+            this.name = name;
+        
+        }  
+    }
+
+    class Bike extends Vehical{
+        break(){
+            console.log(this.name + " is breaking")
+        }
+        drive(){
+            console.log(this.name + " is driving");
+        }
+    }
+
+    class Car extends Vehical{
+        break(){
+            console.log(this.name + " is breaking")
+        }
+        drive(){
+            console.log(this.name + " is driving");
+        }
+    }
+
+    let bike = new Bike("activa");
+   
+    bike.drive();
+    bike.break();
+   
+
+    let car = new Car("i20");
+    car.break();
+    car.drive();
+    
+</script>
