@@ -1,0 +1,22 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.row{
+    height: 130px;
+    background-color: #02395A;
+}
+.row .col{
+    height: auto;
+    /* border: 2px solid white; */
+}
+.row .col .div{
+    height: 40px;
+    width: 80px;
+    /* border: 1px solid white; */
+}
+.row .col .div i{
+    color: white;
+    font-size: 24px;
+}
