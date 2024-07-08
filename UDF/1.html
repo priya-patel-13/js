@@ -1,0 +1,51 @@
+<!-- 1.Write a function charCount(str) that returns  count of each character in a given string str.(hello world)
+
+    "h": 1,
+    "e": 1,
+    "l": 3,
+    "o": 2,
+    " ": 1,
+    "w": 1,
+    "r": 1,
+    "d": 1 -->
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        ENTER STRING:
+        <input type="text" id="t">
+
+        <h1 id="ans"></h1>
+    </body>
+    </html>
+
+
+    <script>
+
+        let a=document.getElementById("t").value 
+        let len = a.length
+
+        function charCount(){
+        let cnt=0
+
+        for(let i=0 ; i<len ; i++)
+        {
+            
+            if(a[i] === 'a' || a[i] === 'e' || a[i] === 'i' || a[i] === 'o' || a[i] === 'u')
+            {
+                cnt++
+            }
+        }
+
+        document.getElementById("ans").innerHTML = cnt
+    }
+
+    charCount(a,len)
+
+    </script>

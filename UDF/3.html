@@ -1,0 +1,35 @@
+<!-- 3. Write a function convertKilometersToMiles(kilometers) that converts kilometers to miles and returns
+the result. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    ENTER KILOMETERS:
+    <input type="text" id="in1">
+
+    <h1 id="ans"></h1>
+</body>
+</html>
+
+<script>
+
+    let a=document.getElementById("in1").value 
+
+    function convertKilometersToMiles(){
+        let miles
+
+        miles = a * 0.621371
+    document.getElementById("ans").innerHTML = "Miles:"+miles
+    }
+
+
+
+    convertKilometersToMiles(a)
+    
+</script>
