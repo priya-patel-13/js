@@ -1,10 +1,6 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
+
 .row{
-    height: 130px;
+    height: auto;
     background-color: #02395A;
 }
 .row .col{
