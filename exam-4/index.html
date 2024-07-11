@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <style>
+    img{
+        display: none;
+        width: 100%;
+        height: 400px;
+    }
+  </style>
+  <body>
+    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/vinambia/PDrealme705G/PC_Hero_3000x1200._CB570221335_.jpg" alt="...">
+    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/PD24/ACQ/T2/GW/PC-hero-new-kv_-3000x1200_2._CB570221731_.jpg" alt="...">
+    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/CookwareDining/Aman/Primeday24/5300-Kitchen---PD24---Hero.jpg_3000X1200._CB570222210_.jpg" alt="...">
+    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Media/BAU/D132995370_Homepage_DesktopHeroTemplate_3000x1200._CB557152260_.jpg" alt="...">
+  <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <center>
+                 <br>   <div class="div">
+                    <i class="fa-regular fa-user"></i>
+                <br><h4 style="color: white; font-size: 18px; margin: 12%;" class="b1"></h4>
+            </div>
+        <br>    <p style="color: rgb(221, 217, 217); font-size: 12px;"> Trained</p>    
+
+                </center>
+            </div>
+            <div class="col">
+                <center>
+                    <br>   <div class="div">
+                        <i class="fa-regular fa-building"></i>
+                        <br><h4 style="color: white; font-size: 18px; margin: 12%;" class="b2"></h4>
+
+                    </div>
+                    <br>    <p style="color: rgb(221, 217, 217); font-size: 12px;">Branches</p>    
+
+                   </center>
+            </div>
+            <div class="col">
+                <center>
+                    <br>   <div class="div">
+                        <i class="fa-solid fa-image"></i>                   
+                        <br><h4 style="color: white; font-size: 18px; margin: 12%;" class="b3"></h4>
+                    </div>
+                    <br>    <p style="color: rgb(221, 217, 217); font-size: 12px;">Certificate</p>    
+
+                   </center>
+            </div>
+            <div class="col">
+                <center>
+                    <br>   <div class="div">
+                       <i class="fa-regular fa-user"></i>
+                       <br><h4 style="color: white; font-size: 18px; margin: 12%;" class="b4"></h4>
+
+                    </div>
+                    <br>    <p style="color: rgb(221, 217, 217); font-size: 12px;">Approved Course</p>    
+
+                   </center>
+            </div>
+            <div class="col">
+                <center>
+                    <br>   <div class="div">
+                       <i class="fa-regular fa-user"></i>
+                       <br><h4 style="color: white; font-size: 18px; margin: 12%;" class="b5"></h4>
+
+                    </div>
+                    <br>    <p style="color: rgb(221, 217, 217); font-size: 12px;">Companies Tie-Ups</p>    
+
+                   </center>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+<script>
+    let pic = document.querySelectorAll("img")
+    let index = 0
+
+    function slides(index){
+        for(let i = 0; i<pic.length; i++){
+            pic[i].style.display ="none"
+        }
+        pic[index].style.display = "block"
+    }
+    function show(){
+        setInterval(()=>{
+            slides(index)                
+            index ++
+            if(index === pic.length){
+                index = 0
+            }
+        },1000)
+    }
+    show()
+
+    let index1 = 1
+    let stop1 = setInterval(()=>{
+        index1++
+        document.querySelector(".b1").innerHTML = index1  + "+"
+        if(index1=== 37500){
+            clearInterval(stop1)
+
+        }
+    },10)
+
+//    box two
+
+
+let index2 = 1
+    let stop2 = setInterval(()=>{
+        index2++
+        document.querySelector(".b2").innerHTML = index2  + "+"
+        if(index2=== 22){
+            clearInterval(stop2)
+
+        }
+    },50)
+
+    // three
+
+    
+let index3 = 1
+    let stop3 = setInterval(()=>{
+        index3++
+        document.querySelector(".b3").innerHTML = index3  + "+"
+        if(index3=== 8){
+            clearInterval(stop3)
+
+        }
+    },200)
+
+    // four
+
+        
+let index4 = 1
+    let stop4 = setInterval(()=>{
+        index4++
+        document.querySelector(".b4").innerHTML = index4  + "+"
+        if(index4=== 50){
+            clearInterval(stop4)
+
+        }
+    },100)
+
+    // five
+
+    let index5 = 1
+    let stop5 = setInterval(()=>{
+        index5++
+        document.querySelector(".b5").innerHTML = index5  + "+"
+        if(index5=== 1500){
+            clearInterval(stop5)
+
+        }
+    },100)
+</script>
