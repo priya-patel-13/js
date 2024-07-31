@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{  
+  min-height: 100vh;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)), url(https://img.freepik.com/free-vector/covid-19-virus-concept_23-2148472606.jpg?t=st=1722421070~exp=1722424670~hmac=6d0e00c449ba76acaba4ab3bf04a225c0c0ecaa3cd99e9e5877dca48cb077b7e&w=740);
+
+}
+input{
+  width: 400px;
+  height: 50px;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+  background: none;
+  border: none;
+  border-bottom: 4px solid #9f01ea;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.main1{
+    width: 40%;
+    margin-left: 30%;
+    padding-top: 30px;
+    margin-top: 200px;
+    /* border: 2px solid; */
+}
+
+.btn {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 45px;
+  justify-content: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  position: relative;
+  text-align: left; 
+  font-size: 18px;
+}
+
+.btn:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.btn:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+#main div{
+    margin-top: 30px;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: space-evenly; */
+    width: 100%;
+    color: white;
+
+}
+#m1 div{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    color: #9f01ea;
+}
+.img1{
+    height: 50px;
+    width: 50px;
+}
+.p1{
+  width: 100%;
+}
+.p2{
+  width: 79%;
+}
+.p3{
+    width: 21%;
+}
