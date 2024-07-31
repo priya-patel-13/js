@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+     <h1>Enter Your City</h1>
+    <input type="text" id="input1">
+    <br><br><br>
+    <button onclick="search()" >click</button>
+    <div id="main"></div>
+</center>
+</body>
+
+</html>
+
+<script>
+
+    function search() {
+        let data = document.getElementById("input1").value
+
+        fetch(`http://api.weatherapi.com/v1/current.json?key=e3bfb07bd8e444aa9cb91051243007&q=India=${data}`)
+            .then((res) => {
+                return res.json()
+            }).then((json) => {
+                console.log(json)
+                displayData(json)
+            })
+    }
+
+    function displayData(data) {
+
+            let div = document.createElement("div")
+
+            let text = document.createElement("p")
+            text.innerHTML = "City name : " + data.location.name
+
+            let state = document.createElement("p")
+            state.innerHTML =  "Region : " + data.location.region
+
+            let temp_c = document.createElement("p")
+            temp_c.innerHTML = "Temprature : " + data.current .temp_c
+
+            let temp_f = document.createElement("p")
+            temp_f.innerHTML =  "wind_kph : " + data.current.wind_kph
+
+
+
+            div.append(text , state , temp_c , temp_f)
+            document.getElementById("main").append(div)
+        
+
+    }
+
+
+</script>

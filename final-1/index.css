@@ -1,0 +1,65 @@
+body{
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    background-color: rgb(195, 230, 241);
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-image: url(https://img.freepik.com/free-photo/closeup-plant_181624-3826.jpg?t=st=1722410480~exp=1722414080~hmac=78aca12929c3d6959deaa78056a507e6d45491f73232ed4d9849156cfe22ff86&w=996);
+}
+
+h1{
+    margin-top: 10%;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;    
+}
+
+#input1{
+
+    /* background-color: rgb(20, 173, 20); */
+    height: 30px;
+    border: none;
+    color: white;
+    font-size: 17px;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    display: flex;
+}
+button{
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    transition: 1s;
+    background-color: rgb(13, 223, 13);
+    border:2px solid rgb(16, 133, 41);
+    color: white;
+    letter-spacing: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 6px;
+
+}
+button:hover{
+    background-color: rgb(33, 122, 52);
+    transform: scale(1.1);
+    transition-duration: 1s;
+    border: 3px solid rgb(13, 223, 13);
+    border-radius: 10px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 120px;
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+    /* border: 1px solid; */
+    width: 300px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
