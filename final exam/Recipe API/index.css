@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.pic{
+    background-position: center;
+    background-size: cover;
+    height: 750px;
+    animation: q 2s linear infinite;
+    position: relative;
+    top: 0px;
+    background-image: url(https://demo.cmssuperheroes.com/themeforest/nuvo-elementor/wp-content/uploads/2020/12/booking-parallax.jpg); 
+}
+@keyframes q{
+    50%{
+        position: relative;
+        top:20px;
+}
+}
+
+#mainDiv{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.item_div{
+    height: auto;
+    width: 27%;
+    margin-top: 50px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+}
+
+.item_div img{
+    height: 300px;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.btn1{
+    height: 45px;
+    width: 40%;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    transition-duration: 0.5s;
+}
+
+.btn1:hover{
+    background-color: transparent;
+    border: 1px solid red;
+    color: red;
+}
+
+.input_box{
+    width: 80%;
+    height: 35px;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: none;
+    margin-left: 10%;
+    border: 1px solid black;
+}
+
+.btn2{
+    height: 45px;
+    width: 40%;
+    margin-left: 15px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: green;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    transition-duration: 0.5s;
+}
+
+.btn2:hover{
+    background-color: transparent;
+    border: 1px solid green;
+    color: green;
+}
+
+#recipe-container{
+    display: none;
+    height: 100px;
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Lobster&display=swap');
+
+
+
+.txt-wraper{
+  position:absolute;
+  top:30%;
+  left:52%;
+  transform:translate(-50%,-50%);
+  width:90%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  
+}
+.txt-wraper p{
+  text-align:center;
+}
+.highlight{
+  font-size:2rem;
+  text-align:center;
+  font-family: 'Lobster', sans-serif;
+}
+.highlight span {
+	color: #f3f1f1;
+	text-shadow: 0 0 0 rgb(0, 0, 0);
+	animation: highlight 3s ease-in-out infinite alternate;
+}
+
+@keyframes highlight {
+  to {
+    text-shadow: 20px 0 50px #139ce6f9;
+    color: #0fd8d8;
+  }
+} 
+
+#searchBtn{
+    border: 1px solid white;
+}
+#searchBtn:hover{
+    background-color: wheat;
+    border: 5px solid white;
+}
