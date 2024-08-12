@@ -7,17 +7,9 @@
     background-position: center;
     background-size: cover;
     height: 750px;
-    animation: q 2s linear infinite;
-    position: relative;
-    top: 0px;
     background-image: url(https://demo.cmssuperheroes.com/themeforest/nuvo-elementor/wp-content/uploads/2020/12/booking-parallax.jpg); 
 }
-@keyframes q{
-    50%{
-        position: relative;
-        top:20px;
-}
-}
+
 
 #mainDiv{
     width: 80%;

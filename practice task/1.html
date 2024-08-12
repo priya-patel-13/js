@@ -1,0 +1,241 @@
+<!-- push, pop, slice ,splice, shift, unshift, map, filter, reduce, sort, reverse -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+
+    <div id="push">
+        <h1>This is PUSH method</h1>
+    </div>
+    <div id="pop">
+        <h1>This is POP method</h1>
+
+    </div>
+    <div id="slice">
+        <h1>This is SLICE method</h1>
+
+    </div>
+    <div id="splice">
+        <h1>This is SPLICE method</h1>
+
+    </div>
+    <div id="shift">
+        <h1>This is SHIFT method</h1>
+
+    </div>
+    <div id="unshift">
+        <h1>This is UNSHIFT method</h1>
+
+    </div>
+    <div id="map">
+        <h1>This is MAP method</h1>
+
+    </div>
+    <div id="filter">
+        <h1>This is FILTER method</h1>
+
+    </div>
+    <div id="reduce">
+        <h1>This is REDUCE method</h1>
+
+    </div>
+    <div id="sort">
+        <h1>This is SORT method</h1>
+
+    </div>
+    <div id="reverse">
+        <h1>This is REVERSE method</h1>
+
+    </div>
+
+</body>
+</html>
+
+<script>
+
+    // push method
+
+   function push(){
+    let arr = []
+
+    for(let i = 1 ; i <= 5 ; i++){
+        arr.push(i)
+    }
+
+    document.getElementById("push").append(arr + " ")
+   }
+
+
+    //  pop method
+   
+    function pop(){
+
+    let arr = []
+
+    for(let i = 1 ; i <= 5 ; i++){
+        arr.push(i)
+    }
+    arr.pop()
+
+    document.getElementById("pop").append(arr)
+
+    }
+
+    //slice method
+
+    function slice(){
+
+     let arr = [1,2,3,4,5]
+
+    let rev = arr.slice(2)
+
+    document.getElementById("slice").append(arr)
+    document.getElementById("slice").append(" Ans: " + rev)
+
+        
+    }
+
+
+    // splice method
+
+    function splice(){
+
+    let arr = [1,2,3,4,5]
+
+    document.getElementById("splice").append(arr)
+
+    arr.splice(2,1,"New")
+
+    document.getElementById("splice").append(" Ans: " + arr)
+
+
+    }
+
+
+    // shift method
+
+    function shift(){
+
+        let arr = [" Tom " , " Jerry " , " Doremon " , " Nobita " , " Masha "]
+
+        document.getElementById("shift").append(arr)
+
+        arr.shift()
+
+        document.getElementById("shift").append(" Ans: " + arr)
+
+    }
+
+    // unshift method
+
+    function unshift(){
+
+        let arr = [" Tom " , " Jerry " , " Doremon "]
+
+        document.getElementById("unshift").append(arr)
+
+        arr.unshift(" , " + "Nobita " , " Masha " )
+
+        document.getElementById("unshift").append("Ans: " + arr)
+
+    }
+
+
+    // map method
+
+    function map(){
+
+         let arr =  [17,23,32,24,35]
+
+    let ans = arr.map((el)=>{
+        return el + 5
+    })
+
+    document.getElementById("map").append(arr)
+    document.getElementById("map").append("Ans:" + ans)
+
+    }
+
+
+
+    // filter metod
+
+    function filter(){
+
+        let arr = [11,21,31,41,51]
+    let ans = arr.filter((el)=>{
+        return el > 18
+    })
+
+    document.getElementById("filter").append(arr)
+    document.getElementById("filter").append("Ans: " + ans)
+
+
+    }
+
+
+    // reduce method
+
+    function reduce(){
+
+        let arr = [18,22,34,24,95]
+
+    let res = arr.reduce((f , s)=>{
+        return f + s
+    },0)
+
+    document.getElementById("reduce").append(arr)
+    document.getElementById("reduce").append("Ans: " + res)
+
+
+    }
+
+
+    // sort method
+
+    function sort(){
+
+    let arr = [4,3,7,6,4,9,1]
+
+    let sort = arr.sort()
+
+    document.getElementById("sort").append(arr)
+    document.getElementById("sort").append("Ans: "+ sort)
+
+
+    }
+
+
+    // reverse method
+
+    function reverse(){
+
+    let arr = [1,2,3,4,5]
+
+
+    let rev = arr.slice().reverse()
+
+    document.getElementById("reverse").append(arr)
+    document.getElementById("reverse").append("Ans: " + rev)
+
+
+    }
+
+
+    push()
+    pop()
+    slice()
+    splice()
+    shift()
+    unshift()
+    map()
+    filter()
+    reduce()
+    sort()
+    reverse()
+</script>

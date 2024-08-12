@@ -1,4 +1,3 @@
-
 fetch("https://fakestoreapi.com/products")
 
     .then((res) => {
@@ -38,24 +37,24 @@ function displayData(json) {
 
         let btn1 = document.createElement("button")
         btn1.innerHTML = "Edit"
-        btn1.setAttribute("class", "button1")
+        btn1.setAttribute("class", "btn1")
 
 
         let btn2 = document.createElement("button")
         btn2.innerHTML = "Update"
-        btn2.setAttribute("class", "button2")
+        btn2.setAttribute("class", "btn1")
 
         let btn3 = document.createElement("button")
         btn3.innerHTML = "Delete"
-        btn3.setAttribute("class", "button3")
+        btn3.setAttribute("class", "btn1")
 
 
         let btn4 = document.createElement("button")
         btn4.innerHTML = "Add To Cart"
-        btn4.setAttribute("class", "button4")
+        btn4.setAttribute("class", "btn1 button4")
 
 
-        div.append(img, text, price, input, input1, btn1, btn2, btn3, btn4)
+        div.append(img, text, price, input, input1,btn4, btn1, btn2, btn3 )
         document.getElementById("main").append(div)
 
 
@@ -96,6 +95,8 @@ function displayData(json) {
         btn4.addEventListener("click", function () {
             console.log(el.image);
             console.log(el.price);
+
+            alert("ADD SUSSCEFULLY")
             let cart_div = document.getElementById("mainCartDiv");
 
             let cart_div1 = document.createElement("div");
@@ -127,3 +128,15 @@ function displayData(json) {
     })
 
 }
+
+
+
+$(document).ready(function(){
+    $(".icon").click(function(){
+        $(".add").css("display" , "block")
+    })
+
+    $(".icon").dblclick(function(){
+        $(".add").css("display" , "none")
+    })
+})
